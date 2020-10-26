@@ -7,11 +7,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainVC: UIViewController {
 
+    @IBOutlet weak var txtWage: CurrencyTxtField!
+    @IBOutlet weak var txtPrice: CurrencyTxtField!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        txtPrice.addDoneButtonOnKeyboard()
     }
 
 
